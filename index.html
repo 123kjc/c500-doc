@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>中证500 M20 监测报告</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: -apple-system, "PingFang SC", "Microsoft YaHei", sans-serif;
+    background: #f2f4f7; color: #1c2733; line-height: 1.6;
+  }
+  .wrap { max-width: 720px; margin: 0 auto; padding: 20px 14px 40px; }
+  header {
+    background: linear-gradient(135deg, #1f3864 0%, #2e5aa8 100%);
+    color: #fff; border-radius: 16px; padding: 26px 22px; margin-bottom: 16px;
+    box-shadow: 0 6px 18px rgba(31,56,100,.25);
+  }
+  header h1 { font-size: 20px; letter-spacing: 1px; }
+  header p { font-size: 12px; opacity: .8; margin-top: 4px; }
+  .hero {
+    background: #f0f9f2; border: 1px solid #a9dfbf; border-radius: 14px;
+    padding: 18px 20px; margin-bottom: 16px;
+  }
+  .hero .date { font-size: 13px; color: #5b6b7b; }
+  .hero .verdict { font-size: 22px; font-weight: 700; color: #1e8449; margin: 2px 0 8px; }
+  .kv { display: flex; flex-wrap: wrap; gap: 6px 22px; font-size: 14px; }
+  .kv b { color: #1e8449; }
+  .card {
+    background: #fff; border-radius: 14px; padding: 16px 14px;
+    box-shadow: 0 2px 8px rgba(28,39,51,.06); margin-bottom: 16px;
+  }
+  .card h2 { font-size: 14px; color: #5b6b7b; margin-bottom: 10px; font-weight: 600; }
+  table { width: 100%; border-collapse: collapse; font-size: 13px; }
+  th { color: #8195a8; font-weight: 600; text-align: center; padding: 8px 4px;
+       border-bottom: 1px solid #e3e8ee; white-space: nowrap; }
+  td { padding: 9px 4px; text-align: center; border-bottom: 1px solid #f0f3f6;
+       white-space: nowrap; }
+  td:first-child { color: #5b6b7b; }
+  .num { font-variant-numeric: tabular-nums; }
+  .tag { font-size: 12px; padding: 2px 8px; border-radius: 999px; }
+  .legend { display: flex; gap: 18px; font-size: 12px; color: #8195a8; margin-top: 8px; }
+  .legend i { display: inline-block; width: 16px; height: 3px; border-radius: 2px;
+               margin-right: 5px; vertical-align: middle; }
+  footer { font-size: 11px; color: #9aa9b7; text-align: center; margin-top: 18px; }
+  .dl {
+    display: block; text-align: center; background: #1f3864; color: #fff;
+    text-decoration: none; border-radius: 10px; padding: 11px 0;
+    font-size: 14px; margin-top: 14px;
+  }
+  .dl:active { opacity: .85; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <h1>中证500 收盘 · M20 监测</h1>
+    <p>000905.SH ｜ 20 日均线 ｜ 每交易日收盘后自动更新</p>
+  </header>
+
+  <div class="hero">
+    <div class="date">最新记录 · 2026-11-06</div>
+    <div class="verdict">▼ 跌破 M20</div>
+    <div class="kv">
+      <span>收盘 <b>6597.35</b></span>
+      <span>M20 <b>6697.25</b></span>
+      <span>偏离 <b>-99.90（-1.49%）</b></span>
+    </div>
+  </div>
+
+  <div class="card">
+    <h2>近期走势（收盘 vs M20）</h2>
+    <svg viewBox="0 0 640 150" xmlns="http://www.w3.org/2000/svg" role="img" style="width:100%;height:auto;display:block"><polyline points="10.0,22.6 46.5,26.8 82.9,30.7 119.4,34.0 155.9,37.0 192.4,40.1 228.8,44.4 265.3,47.9 301.8,52.4 338.2,58.0 374.7,63.0 411.2,68.6 447.6,74.3 484.1,78.4 520.6,83.1 557.1,86.5 593.5,88.6 630.0,91.3" fill="none" stroke="#8fa3bf" stroke-width="2" stroke-dasharray="5,4"/><polyline points="10.0,67.6 46.5,85.3 82.9,85.0 119.4,82.7 155.9,79.3 192.4,79.3 228.8,94.8 265.3,81.5 301.8,90.0 338.2,106.9 374.7,96.0 411.2,111.7 447.6,127.4 484.1,114.5 520.6,122.3 557.1,97.6 593.5,87.7 630.0,99.7" fill="none" stroke="#1e8449" stroke-width="2.6" stroke-linejoin="round" stroke-linecap="round"/></svg>
+    <div class="legend">
+      <span><i style="background:#1e8449"></i>收盘</span>
+      <span><i style="background:#8fa3bf"></i>M20 均线</span>
+    </div>
+  </div>
+
+  <div class="card">
+    <h2>全部记录（18 条）</h2>
+    <table>
+      <tr><th>日期</th><th>收盘</th><th>M20</th><th>偏离%</th><th>状态</th></tr>
+      <tr><td>2026-11-06</td><td class="num" style="color:#1e8449;font-weight:600">6597.35</td><td class="num" style="color:#1e8449;font-weight:600">6697.25</td><td class="num" style="color:#1e8449">-1.49%</td><td><span class="tag" style="color:#1e8449;background:#f0f9f2">绿 · 下方</span></td></tr><tr><td>2026-11-05</td><td class="num" style="color:#c0392b;font-weight:600">6740.93</td><td class="num" style="color:#c0392b;font-weight:600">6729.94</td><td class="num" style="color:#c0392b">+0.16%</td><td><span class="tag" style="color:#c0392b;background:#fdf3f2">红 · 上方</span></td></tr><tr><td>2026-11-04</td><td class="num" style="color:#1e8449;font-weight:600">6622.03</td><td class="num" style="color:#1e8449;font-weight:600">6755.31</td><td class="num" style="color:#1e8449">-1.97%</td><td><span class="tag" style="color:#1e8449;background:#f0f9f2">绿 · 下方</span></td></tr><tr><td>2026-11-03</td><td class="num" style="color:#1e8449;font-weight:600">6327.05</td><td class="num" style="color:#1e8449;font-weight:600">6795.97</td><td class="num" style="color:#1e8449">-6.90%</td><td><span class="tag" style="color:#1e8449;background:#f0f9f2">绿 · 下方</span></td></tr><tr><td>2026-11-02</td><td class="num" style="color:#1e8449;font-weight:600">6420.23</td><td class="num" style="color:#1e8449;font-weight:600">6851.60</td><td class="num" style="color:#1e8449">-6.30%</td><td><span class="tag" style="color:#1e8449;background:#f0f9f2">绿 · 下方</span></td></tr><tr><td>2026-10-30</td><td class="num" style="color:#1e8449;font-weight:600">6266.19</td><td class="num" style="color:#1e8449;font-weight:600">6900.70</td><td class="num" style="color:#1e8449">-9.19%</td><td><span class="tag" style="color:#1e8449;background:#f0f9f2">绿 · 下方</span></td></tr><tr><td>2026-10-29</td><td class="num" style="color:#1e8449;font-weight:600">6453.72</td><td class="num" style="color:#1e8449;font-weight:600">6968.60</td><td class="num" style="color:#1e8449">-7.39%</td><td><span class="tag" style="color:#1e8449;background:#f0f9f2">绿 · 下方</span></td></tr><tr><td>2026-10-28</td><td class="num" style="color:#1e8449;font-weight:600">6640.89</td><td class="num" style="color:#1e8449;font-weight:600">7035.50</td><td class="num" style="color:#1e8449">-5.61%</td><td><span class="tag" style="color:#1e8449;background:#f0f9f2">绿 · 下方</span></td></tr><tr><td>2026-10-27</td><td class="num" style="color:#1e8449;font-weight:600">6511.42</td><td class="num" style="color:#1e8449;font-weight:600">7094.90</td><td class="num" style="color:#1e8449">-8.22%</td><td><span class="tag" style="color:#1e8449;background:#f0f9f2">绿 · 下方</span></td></tr><tr><td>2026-10-26</td><td class="num" style="color:#1e8449;font-weight:600">6712.73</td><td class="num" style="color:#1e8449;font-weight:600">7161.86</td><td class="num" style="color:#1e8449">-6.27%</td><td><span class="tag" style="color:#1e8449;background:#f0f9f2">绿 · 下方</span></td></tr><tr><td>2026-10-23</td><td class="num" style="color:#1e8449;font-weight:600">6814.44</td><td class="num" style="color:#1e8449;font-weight:600">7216.20</td><td class="num" style="color:#1e8449">-5.57%</td><td><span class="tag" style="color:#1e8449;background:#f0f9f2">绿 · 下方</span></td></tr><tr><td>2026-10-22</td><td class="num" style="color:#1e8449;font-weight:600">6655.25</td><td class="num" style="color:#1e8449;font-weight:600">7258.23</td><td class="num" style="color:#1e8449">-8.31%</td><td><span class="tag" style="color:#1e8449;background:#f0f9f2">绿 · 下方</span></td></tr><tr><td>2026-10-21</td><td class="num" style="color:#1e8449;font-weight:600">6840.56</td><td class="num" style="color:#1e8449;font-weight:600">7309.64</td><td class="num" style="color:#1e8449">-6.42%</td><td><span class="tag" style="color:#1e8449;background:#f0f9f2">绿 · 下方</span></td></tr><tr><td>2026-10-20</td><td class="num" style="color:#1e8449;font-weight:600">6841.44</td><td class="num" style="color:#1e8449;font-weight:600">7345.69</td><td class="num" style="color:#1e8449">-6.86%</td><td><span class="tag" style="color:#1e8449;background:#f0f9f2">绿 · 下方</span></td></tr><tr><td>2026-10-19</td><td class="num" style="color:#1e8449;font-weight:600">6800.66</td><td class="num" style="color:#1e8449;font-weight:600">7382.18</td><td class="num" style="color:#1e8449">-7.88%</td><td><span class="tag" style="color:#1e8449;background:#f0f9f2">绿 · 下方</span></td></tr><tr><td>2026-10-16</td><td class="num" style="color:#1e8449;font-weight:600">6772.75</td><td class="num" style="color:#1e8449;font-weight:600">7421.17</td><td class="num" style="color:#1e8449">-8.74%</td><td><span class="tag" style="color:#1e8449;background:#f0f9f2">绿 · 下方</span></td></tr><tr><td>2026-10-15</td><td class="num" style="color:#1e8449;font-weight:600">6769.25</td><td class="num" style="color:#1e8449;font-weight:600">7468.42</td><td class="num" style="color:#1e8449">-9.36%</td><td><span class="tag" style="color:#1e8449;background:#f0f9f2">绿 · 下方</span></td></tr><tr><td>2026-10-14</td><td class="num" style="color:#1e8449;font-weight:600">6980.11</td><td class="num" style="color:#1e8449;font-weight:600">7518.37</td><td class="num" style="color:#1e8449">-7.16%</td><td><span class="tag" style="color:#1e8449;background:#f0f9f2">绿 · 下方</span></td></tr>
+    </table>
+  </div>
+
+  <a class="dl" href="output/%E4%B8%AD%E8%AF%81500_M20%E7%9B%91%E6%B5%8B.docx">📄 下载 Word 完整版</a>
+
+  <footer>
+    红记收盘在 M20 上方 · 绿记收盘在 M20 下方<br>
+    M20 = 最近 20 个交易日收盘价简单算术平均 ｜ 数据源：东方财富日线（不复权）<br>
+    更新时间：2026-11-09 12:46:10
+  </footer>
+</div>
+</body>
+</html>
